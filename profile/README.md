@@ -1,7 +1,7 @@
 # Welcome to Kagi Labs 🟡
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/kagi-labs/.github/main/profile/assets/kagi-labs-avatar.jpg" width="300" alt="Kagi Labs BMO Builder Bot">
+  <img src="https://raw.githubusercontent.com/kagi-labs/.github/main/profile/assets/bmo-mascot.jpg" width="300" alt="Kagi Labs BMO Mascot">
 </div>
 
 **Infrastructure for the Agentic Future.**
