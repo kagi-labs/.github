@@ -1,31 +1,25 @@
 # Welcome to Kagi Labs 🟡
 
-**Liberate your search.**
+**Infrastructure for the Agentic Future.**
 
-We envision a friendly internet worthy of human potential — where exploration leads to discovery, not distraction, and where knowledge flows freely, unbound by algorithms or advertising.
+We build the missing tools, bridges, and firewalls for AI agents (like OpenClaw) to operate safely and effectively in the real world.
 
 ## 🚀 Active Projects
 
-### 🔍 [Kagi Search](https://kagi.com)
-Premium, ad-free, private search engine.
-- **Values:** No ads, no tracking, user-funded.
-- **Goal:** High-quality results, simplified.
+### 🌉 [Project Hashi](https://github.com/kagi-labs/hashi)
+*(Formerly Scout)*
+A secure local task orchestrator and control plane. The "hands" that let agents work with local files and tools safely.
 
-### 🌐 [Orion Browser](https://browser.kagi.com)
-A browser that honors the Mac experience.
-- **Features:** 100% native, WebExtensions support, zero telemetry.
-- **Speed:** Lightning fast and ruthlessly private.
+### 🛡️ [MCP Firewall](https://github.com/kagi-labs/mcp-firewall)
+A universal proxy for Model Context Protocol. Intercepts tool calls for human approval, ensuring agents don't burn down the house.
 
-### 🤖 Kagi Assistant
-Powerful AI grounded in Kagi search results.
-- **Tech:** Access to the best models (GPT-4, Claude 3, Gemini).
-- **Privacy:** Your chats are yours.
+### 🤖 Agent BMO
+*(Internal Prototype)*
+Our living proof-of-concept. Developing infrastructure around OpenClaw to fix what's missing in the current ecosystem.
 
 ---
 
 ### 🛡️ Our Core Values
-1.  **User First:** You are the customer, not the product.
-2.  **Privacy:** Free of surveillance.
-3.  **Quality:** Signal over noise.
-
-*Join the revolution at [kagi.com](https://kagi.com)*
+1.  **Safety First:** Agents need guardrails, not just prompts.
+2.  **Local Control:** Your data stays home. Your agent works for you.
+3.  **Utility:** Building tools that actually work.
