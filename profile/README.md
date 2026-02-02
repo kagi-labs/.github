@@ -1,5 +1,9 @@
 # Welcome to Kagi Labs 🟡
 
+<div align="center">
+  <img src="profile/assets/kagi-labs-avatar.jpg" width="300" alt="Kagi Labs BMO Builder Bot">
+</div>
+
 **Infrastructure for the Agentic Future.**
 
 We build the missing tools, bridges, and firewalls for AI agents (like OpenClaw) to operate safely and effectively in the real world.
