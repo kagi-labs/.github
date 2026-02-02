@@ -18,8 +18,8 @@ A secure local task orchestrator and control plane. The "hands" that let agents 
 A universal proxy for Model Context Protocol. Intercepts tool calls for human approval, ensuring agents don't burn down the house.
 
 ### 🤖 Agent BMO
-*(Internal Prototype)*
-Our living proof-of-concept. Developing infrastructure around OpenClaw to fix what's missing in the current ecosystem.
+*(Personal Agent)*
+A living example of a personal AI agent running on OpenClaw. Shows how to use our infrastructure to build your own digital friend.
 
 ---
 
