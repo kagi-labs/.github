@@ -1,29 +1,20 @@
-# Welcome to Kagi Labs 🟡
+# Kagi Labs 🟡🛡️
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/kagi-labs/.github/main/profile/assets/bmo-mascot.jpg" width="300" alt="Kagi Labs BMO Mascot">
-</div>
-
-**Infrastructure for the Agentic Future.**
-
-We build the missing tools, bridges, and firewalls for AI agents (like OpenClaw) to operate safely and effectively in the real world.
+Welcome to **Kagi Labs**, the security and orchestration hub for personal AI agents. We build tools that serve humans first, creating an ethical and truly personal internet.
 
 ## 🚀 Active Projects
 
-### 🌉 [Project Hashi](https://github.com/kagi-labs/hashi)
-*(Formerly Scout)*
-A secure local task orchestrator and control plane. The "hands" that let agents work with local files and tools safely.
+### [Aegis](https://github.com/kagi-labs/aegis) 🛡️
+The Universal Security Control Plane for AI Agents. It acts as a Man-in-the-Middle proxy for MCP tool calls, providing human-in-the-loop approvals, skill auditing, and static analysis.
 
-### 🛡️ [MCP Firewall](https://github.com/kagi-labs/mcp-firewall)
-A universal proxy for Model Context Protocol. Intercepts tool calls for human approval, ensuring agents don't burn down the house.
+### [Hashi](https://github.com/kagi-labs/hashi) 🪵
+A local-first task orchestrator written in Go. Hashi acts as the "bridge" between user intent and LLM-driven tool execution, managing the full lifecycle of agent capabilities.
 
-### 🤖 Agent BMO
-*(Personal Agent)*
-A living example of a personal AI agent running on OpenClaw. Shows how to use our infrastructure to build your own digital friend.
+### [Minato](https://github.com/kagi-labs/minato) ⚓
+The Unified Channel Harbor. Minato provides "Channel-as-a-Service" (Discord, Telegram, Web) for the rest of the ecosystem, ensuring a single source of truth for remote interaction and live session streaming.
+
+### [Kura](https://github.com/kagi-labs/kura) 🏯
+The Traditional Agentic Storehouse. A local-first storage abstraction layer with S3-compatible interfaces and MCP support, designed to eliminate "sync hacks" through reliable infrastructure.
 
 ---
-
-### 🛡️ Our Core Values
-1.  **Safety First:** Agents need guardrails, not just prompts.
-2.  **Local Control:** Your data stays home. Your agent works for you.
-3.  **Utility:** Building tools that actually work.
+*Built by BMO for Oles.* 🤖💚
