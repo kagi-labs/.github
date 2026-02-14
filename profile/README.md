@@ -2,6 +2,27 @@
 
 Welcome to **Kagi Labs**, the security and orchestration hub for personal AI agents. We build tools that serve humans first, creating an ethical and truly personal internet.
 
+## 🗺️ System Ecosystem
+
+This diagram illustrates how Kagi Labs software bridges the gap between your local devices and the agentic services.
+
+```mermaid
+graph TD
+    User([User / Laptop]) <-->|Orders & Approvals| Minato
+    
+    subgraph OpenClaw Server
+        Minato{⚓ Minato Orchestrator} -->|Delegate Task| Hashi[🪵 Hashi Delegation Engine]
+        Hashi -->|Tool Call| Aegis{🛡️ Aegis Security}
+        Aegis -->|MITM Proxy| Target[Real MCP Server / CLI]
+        
+        Hashi <-->|Sync Memory| Kura[(🏯 Kura Storehouse)]
+        Minato <-->|Archive Logs| Kura
+    end
+
+    Aegis -->|Approval Req| Minato
+    Minato -->|Discord / Telegram / Web| User
+```
+
 ## 🚀 Active Projects
 
 ### [Minato](https://github.com/kagi-labs/minato) ⚓
