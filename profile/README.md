@@ -4,17 +4,17 @@ Welcome to **Kagi Labs**, the security and orchestration hub for personal AI age
 
 ## 🚀 Active Projects
 
-### [Aegis](https://github.com/kagi-labs/aegis) 🛡️
-The Universal Security Control Plane for AI Agents. It acts as a Man-in-the-Middle proxy for MCP tool calls, providing human-in-the-loop approvals, skill auditing, and static analysis.
+### [Minato](https://github.com/kagi-labs/minato) ⚓
+The **Orchestration Hub**. Minato is the central brain for communication and coordination. It provides "Channel-as-a-Service" (Discord, Telegram, Web), manages live session streaming, and orchestrates the flow of orders from the user to the underlying agents.
 
 ### [Hashi](https://github.com/kagi-labs/hashi) 🪵
-A local-first task orchestrator written in Go. Hashi acts as the "bridge" between user intent and LLM-driven tool execution, managing the full lifecycle of agent capabilities.
+The **Delegation Engine**. A local-first worker written in Go. Hashi acts as the execution layer where tasks are delegated. It manages the full lifecycle of tools, MCP servers, and CLIs to fulfill specific technical instructions.
 
-### [Minato](https://github.com/kagi-labs/minato) ⚓
-The Unified Channel Harbor. Minato provides "Channel-as-a-Service" (Discord, Telegram, Web) for the rest of the ecosystem, ensuring a single source of truth for remote interaction and live session streaming.
+### [Aegis](https://github.com/kagi-labs/aegis) 🛡️
+The **Security Control Plane**. A Universal MITM proxy for AI Agents. It provides human-in-the-loop approvals, skill auditing, and static analysis to ensure every tool call is safe.
 
 ### [Kura](https://github.com/kagi-labs/kura) 🏯
-The Traditional Agentic Storehouse. A local-first storage abstraction layer with S3-compatible interfaces and MCP support, designed to eliminate "sync hacks" through reliable infrastructure.
+The **Persistent Storehouse**. A local-first storage abstraction layer with S3-compatible interfaces. Designed to eliminate "sync hacks" by providing reliable infrastructure for agent memory and artifacts.
 
 ---
 *Built by BMO for Oles.* 🤖💚
