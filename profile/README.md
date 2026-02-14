@@ -4,38 +4,42 @@ Welcome to **Kagi Labs**, the security and orchestration hub for personal AI age
 
 ## 🗺️ System Ecosystem
 
-This diagram illustrates how Kagi Labs software bridges the gap between your local devices and the agentic services.
+This diagram illustrates the flow of data and commands between your local environment and the cloud storage layer.
 
 ```mermaid
 graph TD
-    User([User / Laptop]) <-->|Orders & Approvals| Minato
+    User([User / Discord / Telegram]) <-->|Orders & Approvals| Minato
     
-    subgraph OpenClaw Server
-        Minato{⚓ Minato Orchestrator} -->|Delegate Task| Hashi[🪵 Hashi Delegation Engine]
+    subgraph Client Machine / Laptop
+        Minato{⚓ Minato Orchestrator} <-->|Technical Streams| Hashi[🪵 Hashi Delegation Engine]
         Hashi -->|Tool Call| Aegis{🛡️ Aegis Security}
-        Aegis -->|MITM Proxy| Target[Real MCP Server / CLI]
+        Aegis -->|MITM Proxy| Target[Local Tools / CLIs / MCP]
         
-        Hashi <-->|Sync Memory| Kura[(🏯 Kura Storehouse)]
-        Minato <-->|Archive Logs| Kura
+        Minato <-->|Local Cache| Kura[(🏯 Kura Storehouse)]
+        Hashi <-->|Local Cache| Kura
+        Aegis <-->|Local Trust| Kura
     end
 
-    Aegis -->|Approval Req| Minato
-    Minato -->|Discord / Telegram / Web| User
+    subgraph Infrastructure / Cloud
+        Kura <-->|Background Sync| Storage[(S3 / GDrive / Dropbox)]
+    end
+
+    Aegis -.->|Approval Request| Minato
 ```
 
 ## 🚀 Active Projects
 
 ### [Minato](https://github.com/kagi-labs/minato) ⚓
-The **Orchestration Hub**. Minato is the central brain for communication and coordination. It provides "Channel-as-a-Service" (Discord, Telegram, Web), manages live session streaming, and orchestrates the flow of orders from the user to the underlying agents.
+The **Orchestration Hub**. Minato lives on the client side as the primary communication brain. It provides "Channel-as-a-Service" (Discord, Telegram, Web), manages live session streaming, and orchestrates the flow of orders from the user to the delegation engines.
 
 ### [Hashi](https://github.com/kagi-labs/hashi) 🪵
-The **Delegation Engine**. A local-first worker written in Go. Hashi acts as the execution layer where tasks are delegated. It is designed to give users more secure, powerful AI capabilities on their local workmachines by managing the full lifecycle of tools, MCP servers, and CLIs to fulfill specific technical instructions.
+The **Delegation Engine**. Also client-side, Hashi is the execution layer where tasks are performed. It is designed to give users secure, powerful AI capabilities on their local workmachines by managing tools and CLIs without compromising the host.
 
 ### [Aegis](https://github.com/kagi-labs/aegis) 🛡️
-The **Security Control Plane**. A Universal MITM proxy for AI Agents. It provides human-in-the-loop approvals, skill auditing, and static analysis to ensure every tool call is safe.
+The **Security Control Plane**. Living on the client, Aegis acts as a MITM proxy for all agentic actions. It intercepts tool calls, audits skills, and communicates with Minato to handle human-in-the-loop approvals.
 
 ### [Kura](https://github.com/kagi-labs/kura) 🏯
-The **Persistent Storehouse**. A local-first storage abstraction layer with S3-compatible interfaces. Designed to eliminate "sync hacks" by providing reliable infrastructure for agent memory and artifacts.
+The **Persistent Storehouse**. A hybrid storage layer that manages local data on the client machine and transparently syncs it to cloud backends (S3/GDrive). It provides the "Local Trust" and memory consistency for the entire ecosystem.
 
 ---
 *Built by BMO for Oles.* 🤖💚
